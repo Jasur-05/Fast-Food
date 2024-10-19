@@ -1,0 +1,189 @@
+@media (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+
+    .burgerlist {
+        grid-template-columns: repeat(2, 4fr);
+    }
+    
+  }
+
+  
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+
+    .header__title {
+        font-size: 60px;
+    }
+
+    .header__price {
+        padding: 30px 65px;
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+    
+    .menu {
+        position: absolute;
+        top: 100%;
+        right: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 200px;
+        background: rgba(60, 41, 41, 0.7);
+        transform: scaleY(0);
+        transition: 0.5s;
+        transform-origin: top;
+    }
+
+    .header__burger:focus ~ .menu {
+        transform: scaleY(1);
+    }
+
+    .menu__link {
+        padding: 15px;
+        
+    }
+    .menu__list:hover {
+        width: 100%;
+    }
+
+    .menu__list {
+        padding:20px; 
+    }
+/*       .menu {
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(60, 41, 41, 0.7);
+        min-width: 200px;
+        transform: scaleY(0);
+        transition: 0.5s;
+        transform-origin: top;
+      }
+      
+      .header__burger:focus ~ .menu {
+        transform: scaleY(1);
+      }
+      
+      .menu__list {
+        padding: 20px;
+      }
+      
+      .menu__link:hover {
+        background:  rgba(237, 142, 0, 0.2);
+      }
+      
+      .menu__link::after {
+        left: 0;
+      }
+     */  
+
+    .header__link {
+      
+    }
+
+    .header__title {
+      font-size: 40px;
+    }
+
+    .header__rubrik {
+      font-size: 30px;
+    }
+
+    .header__price {
+      padding: 20px 50px;
+    }
+
+    .header__look {
+      padding: 14px 40px;
+    }
+
+    .burgerlist {
+      gap: 15px;    
+    }
+
+
+  }
+
+
+  @media (max-width: 576px) {
+    .reklam {
+      flex-wrap: wrap;
+     justify-content: space-evenly
+    }
+    .list {
+      flex-direction: column;
+    }
+
+    .navbar {
+      flex-wrap: wrap;
+    }
+
+    .navbar__street {
+      font-size: 30px;
+    }
+
+    .header__link {
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+     .card {
+      grid-column: span 2;
+    }
+
+    .station {
+     flex-direction: column;
+     gap: 10px;
+     margin-left: 0;
+    }
+
+    .station__list {
+      padding: 15px 0;
+    }
+
+    .footer__container {
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 0;
+    }
+
+    .footer__navbar {
+      padding-bottom: 30px;
+    }
+
+    .navbar {
+      padding: 10px;
+    }
+
+    .map__title {
+      font-size: 35px;
+    }
+
+    .street88__title {
+      font-size: 40px;
+    }
+
+    .about__desc {
+      font-size: 15px;
+    }
+
+
+  }
+
+
